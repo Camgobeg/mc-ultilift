@@ -1,0 +1,29 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="MIT"
+issueTrackerURL="https://github.com/yourname/ultimaelevators/issues"
+[[mods]]
+modId="ultimaelevators"
+version="${file.jarVersion}"
+displayName="Ultima Elevators"
+authors="Ultima Engineering"
+description='''
+The most advanced Minecraft elevator system: Schindler-style landing doors, KONE Polaris destination dispatch,
+real MR (machine room) and MRL (machine-room-less) traction drives, mandatory shaft buffers (kuyu yaylari),
+counterweight rails, guide shafts, brands (Schindler / KONE / Otis / Mitsubishi / TK Elevator / Ultima),
+cab frame styles, floor indicators and hall lanterns.
+'''
+
+[[dependencies.ultimaelevators]]
+    modId="forge"
+    mandatory=true
+    versionRange="[47,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.ultimaelevators]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.20.1,1.21)"
+    ordering="NONE"
+    side="BOTH"

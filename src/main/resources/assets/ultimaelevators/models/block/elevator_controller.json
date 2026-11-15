@@ -1,0 +1,9 @@
+﻿{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "top": "ultimaelevators:block/controller_top",
+    "front": "ultimaelevators:block/controller_front",
+    "side": "ultimaelevators:block/controller_side",
+    "particle": "ultimaelevators:block/controller_side"
+  }
+}

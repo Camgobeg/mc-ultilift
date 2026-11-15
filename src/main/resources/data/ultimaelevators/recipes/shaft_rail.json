@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "I",
+    "I",
+    "S"
+  ],
+  "key": {
+    "I": { "item": "minecraft:iron_ingot" },
+    "S": { "item": "minecraft:smooth_stone" }
+  },
+  "result": {
+    "item": "ultimaelevators:shaft_rail",
+    "count": 4
+  }
+}

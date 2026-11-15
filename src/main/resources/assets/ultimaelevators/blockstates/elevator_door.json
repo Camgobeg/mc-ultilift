@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "facing=north": { "model": "ultimaelevators:block/elevator_door", "y": 0 },
+    "facing=south": { "model": "ultimaelevators:block/elevator_door", "y": 180 },
+    "facing=east": { "model": "ultimaelevators:block/elevator_door", "y": 90 },
+    "facing=west": { "model": "ultimaelevators:block/elevator_door", "y": 270 },
+    "facing=north,open=true": { "model": "ultimaelevators:block/elevator_door", "y": 0 },
+    "facing=south,open=true": { "model": "ultimaelevators:block/elevator_door", "y": 180 },
+    "facing=east,open=true": { "model": "ultimaelevators:block/elevator_door", "y": 90 },
+    "facing=west,open=true": { "model": "ultimaelevators:block/elevator_door", "y": 270 }
+  }
+}

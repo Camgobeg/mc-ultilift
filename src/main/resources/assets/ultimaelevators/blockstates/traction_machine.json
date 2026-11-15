@@ -1,0 +1,6 @@
+﻿{
+  "variants": {
+    "geared=false": { "model": "ultimaelevators:block/traction_machine_gearless" },
+    "geared=true": { "model": "ultimaelevators:block/traction_machine_geared" }
+  }
+}

@@ -1,0 +1,4 @@
+﻿{
+  "parent": "minecraft:block/cube_all",
+  "textures": { "all": "ultimaelevators:block/machine_geared_front", "particle": "ultimaelevators:block/machine_geared_front" }
+}

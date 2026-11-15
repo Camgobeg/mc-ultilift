@@ -1,0 +1,8 @@
+﻿{
+  "variants": {
+    "facing=north": { "model": "ultimaelevators:block/destination_kiosk", "y": 0 },
+    "facing=south": { "model": "ultimaelevators:block/destination_kiosk", "y": 180 },
+    "facing=west": { "model": "ultimaelevators:block/destination_kiosk", "y": 270 },
+    "facing=east": { "model": "ultimaelevators:block/destination_kiosk", "y": 90 }
+  }
+}

@@ -1,0 +1,5 @@
+﻿{
+  "parent": "minecraft:block/cube_all",
+  "render_type": "minecraft:translucent",
+  "textures": { "all": "ultimaelevators:block/shaft_glass", "particle": "ultimaelevators:block/shaft_glass" }
+}

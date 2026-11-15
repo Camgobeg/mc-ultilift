@@ -1,0 +1,15 @@
+.gradle/
+build/
+out/
+classes/
+run/
+run-data/
+mcmodsrepo/
+*.launch
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+bin/
+eclipse/

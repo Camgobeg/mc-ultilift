@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PBP",
+    "BOB",
+    "PBP"
+  ],
+  "key": {
+    "P": { "item": "minecraft:iron_ingot" },
+    "B": { "item": "minecraft:water_bucket" },
+    "O": { "item": "minecraft:obsidian" }
+  },
+  "result": {
+    "item": "ultimaelevators:oil_buffer",
+    "count": 1
+  }
+}

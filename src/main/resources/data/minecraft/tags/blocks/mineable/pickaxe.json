@@ -1,0 +1,19 @@
+﻿{
+  "replace": false,
+  "values": [
+    "ultimaelevators:elevator_controller",
+    "ultimaelevators:shaft_frame",
+    "ultimaelevators:shaft_glass",
+    "ultimaelevators:shaft_rail",
+    "ultimaelevators:counterweight_rail",
+    "ultimaelevators:oil_buffer",
+    "ultimaelevators:spring_buffer",
+    "ultimaelevators:mrl_drive",
+    "ultimaelevators:traction_machine",
+    "ultimaelevators:elevator_door",
+    "ultimaelevators:elevator_door_upper",
+    "ultimaelevators:call_button",
+    "ultimaelevators:floor_indicator",
+    "ultimaelevators:destination_kiosk"
+  ]
+}

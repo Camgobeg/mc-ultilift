@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    { "item": "ultimaelevators:shaft_frame" },
+    { "item": "minecraft:glass" }
+  ],
+  "result": {
+    "item": "ultimaelevators:shaft_glass",
+    "count": 1
+  }
+}

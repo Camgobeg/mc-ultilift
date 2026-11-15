@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BIB",
+    "III",
+    "BIB"
+  ],
+  "key": {
+    "I": { "item": "minecraft:iron_block" },
+    "B": { "item": "minecraft:iron_ingot" }
+  },
+  "result": {
+    "item": "ultimaelevators:counterweight_rail",
+    "count": 1
+  }
+}

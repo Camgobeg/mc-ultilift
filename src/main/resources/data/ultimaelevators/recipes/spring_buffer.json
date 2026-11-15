@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "ISI",
+    "III"
+  ],
+  "key": {
+    "I": { "item": "minecraft:iron_ingot" },
+    "S": { "item": "minecraft:slime_ball" }
+  },
+  "result": {
+    "item": "ultimaelevators:spring_buffer",
+    "count": 1
+  }
+}

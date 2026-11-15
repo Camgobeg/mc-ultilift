@@ -1,0 +1,21 @@
+﻿{
+  "textures": {
+    "front": "ultimaelevators:block/kiosk_front",
+    "side": "ultimaelevators:block/kiosk_side",
+    "particle": "ultimaelevators:block/kiosk_side"
+  },
+  "elements": [
+    {
+      "from": [2, 0, 0],
+      "to": [14, 16, 4],
+      "faces": {
+        "north": { "texture": "#front" },
+        "south": { "texture": "#side" },
+        "east": { "texture": "#side" },
+        "west": { "texture": "#side" },
+        "up": { "texture": "#side" },
+        "down": { "texture": "#side" }
+      }
+    }
+  ]
+}

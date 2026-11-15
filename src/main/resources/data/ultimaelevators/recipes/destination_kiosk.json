@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "IGI",
+    "IQI",
+    "IGI"
+  ],
+  "key": {
+    "I": { "item": "minecraft:iron_ingot" },
+    "G": { "item": "minecraft:glass_pane" },
+    "Q": { "item": "minecraft:quartz" }
+  },
+  "result": {
+    "item": "ultimaelevators:destination_kiosk",
+    "count": 1
+  }
+}

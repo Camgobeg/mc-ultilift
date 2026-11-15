@@ -1,0 +1,6 @@
+﻿{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "ultimaelevators:item/lift_linker"
+  }
+}

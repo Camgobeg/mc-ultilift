@@ -1,0 +1,20 @@
+﻿{
+  "variants": {
+    "facing=north,call_up=true,lit=true": { "model": "ultimaelevators:block/call_button_up_lit", "y": 0 },
+    "facing=north,call_up=true,lit=false": { "model": "ultimaelevators:block/call_button_up", "y": 0 },
+    "facing=north,call_up=false,lit=true": { "model": "ultimaelevators:block/call_button_down_lit", "y": 0 },
+    "facing=north,call_up=false,lit=false": { "model": "ultimaelevators:block/call_button_down", "y": 0 },
+    "facing=south,call_up=true,lit=true": { "model": "ultimaelevators:block/call_button_up_lit", "y": 180 },
+    "facing=south,call_up=true,lit=false": { "model": "ultimaelevators:block/call_button_up", "y": 180 },
+    "facing=south,call_up=false,lit=true": { "model": "ultimaelevators:block/call_button_down_lit", "y": 180 },
+    "facing=south,call_up=false,lit=false": { "model": "ultimaelevators:block/call_button_down", "y": 180 },
+    "facing=west,call_up=true,lit=true": { "model": "ultimaelevators:block/call_button_up_lit", "y": 270 },
+    "facing=west,call_up=true,lit=false": { "model": "ultimaelevators:block/call_button_up", "y": 270 },
+    "facing=west,call_up=false,lit=true": { "model": "ultimaelevators:block/call_button_down_lit", "y": 270 },
+    "facing=west,call_up=false,lit=false": { "model": "ultimaelevators:block/call_button_down", "y": 270 },
+    "facing=east,call_up=true,lit=true": { "model": "ultimaelevators:block/call_button_up_lit", "y": 90 },
+    "facing=east,call_up=true,lit=false": { "model": "ultimaelevators:block/call_button_up", "y": 90 },
+    "facing=east,call_up=false,lit=true": { "model": "ultimaelevators:block/call_button_down_lit", "y": 90 },
+    "facing=east,call_up=false,lit=false": { "model": "ultimaelevators:block/call_button_down", "y": 90 }
+  }
+}

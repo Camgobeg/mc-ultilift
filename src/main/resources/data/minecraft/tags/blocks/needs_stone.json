@@ -1,0 +1,8 @@
+﻿{
+  "replace": false,
+  "values": [
+    "ultimaelevators:elevator_controller",
+    "ultimaelevators:mrl_drive",
+    "ultimaelevators:traction_machine"
+  ]
+}

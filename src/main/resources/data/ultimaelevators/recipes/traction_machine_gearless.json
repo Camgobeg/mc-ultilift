@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ICI",
+    "BNB",
+    "ICI"
+  ],
+  "key": {
+    "I": { "item": "minecraft:iron_ingot" },
+    "C": { "item": "minecraft:copper_ingot" },
+    "B": { "item": "minecraft:iron_block" },
+    "N": { "item": "minecraft:note_block" }
+  },
+  "result": {
+    "item": "ultimaelevators:traction_machine",
+    "count": 1
+  }
+}
