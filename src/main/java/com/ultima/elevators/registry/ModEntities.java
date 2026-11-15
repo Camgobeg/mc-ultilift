@@ -15,7 +15,7 @@ public class ModEntities {
     @SuppressWarnings("removal")
     public static final RegistryObject<EntityType<ElevatorCarEntity>> ELEVATOR_CAR =
             ENTITY_TYPES.register("elevator_car", () -> EntityType.Builder
-                    .<ElevatorCarEntity>of(ElevatorCarEntity::new, MobCategory.MISCELANEOUS)
+                    .<ElevatorCarEntity>of(ElevatorCarEntity::new, MobCategory.MISC)
                     .sized(0.98F, 0.5F)
                     .fireImmune()
                     .noSummon()

@@ -72,20 +72,20 @@ public class ElevatorCarRenderer extends EntityRenderer<ElevatorCarEntity> {
         int light = packedLight;
         int overlay = OverlayTexture.NO_OVERLAY;
 
-        floor.render(buffer, light, overlay, r, g, b, 1.0F);
-        ceiling.render(buffer, light, overlay, r, g, b, 1.0F);
-        back.render(buffer, light, overlay, r, g, b, 1.0F);
-        left.render(buffer, light, overlay, r, g, b, 1.0F);
-        right.render(buffer, light, overlay, r, g, b, 1.0F);
-        postL.render(buffer, light, overlay, r, g, b, 1.0F);
-        postR.render(buffer, light, overlay, r, g, b, 1.0F);
-        header.render(buffer, light, overlay, r, g, b, 1.0F);
+        floor.render(ps, buffer, light, overlay, r, g, b, 1.0F);
+        ceiling.render(ps, buffer, light, overlay, r, g, b, 1.0F);
+        back.render(ps, buffer, light, overlay, r, g, b, 1.0F);
+        left.render(ps, buffer, light, overlay, r, g, b, 1.0F);
+        right.render(ps, buffer, light, overlay, r, g, b, 1.0F);
+        postL.render(ps, buffer, light, overlay, r, g, b, 1.0F);
+        postR.render(ps, buffer, light, overlay, r, g, b, 1.0F);
+        header.render(ps, buffer, light, overlay, r, g, b, 1.0F);
 
         float p = entity.doorProgress();
         carDoorL.x = -2.5F - 5.0F * p;
         carDoorR.x = 2.5F + 5.0F * p;
-        carDoorL.render(buffer, light, overlay, r, g, b, 1.0F);
-        carDoorR.render(buffer, light, overlay, r, g, b, 1.0F);
+        carDoorL.render(ps, buffer, light, overlay, r, g, b, 1.0F);
+        carDoorR.render(ps, buffer, light, overlay, r, g, b, 1.0F);
 
         renderCounterweightAndRopes(entity, ps, buf, light, overlay, r, g, b);
 
@@ -113,7 +113,7 @@ public class ElevatorCarRenderer extends EntityRenderer<ElevatorCarEntity> {
         var buffer = buf.getBuffer(RenderType.entityCutoutNoCull(TEX));
         ps.pushPose();
         ps.translate(0.0F, (float) cwOffsetUnits / 16.0F, 0.0F);
-        cw.render(buffer, light, overlay, r, g, b, 1.0F);
+        cw.render(ps, buffer, light, overlay, r, g, b, 1.0F);
         ps.popPose();
 
         double cabRoofModel = -34.0;                      // y=+2.125 blocks above cab origin
@@ -125,7 +125,7 @@ public class ElevatorCarRenderer extends EntityRenderer<ElevatorCarEntity> {
         ps.pushPose();
         ps.translate(4.0F / 16.0F, (float) cabRoofModel / 16.0F, 5.5F / 16.0F);
         ps.scale(1.0F, (float) (lenA / 32.0), 1.0F);
-        ropeA.render(buffer, light, overlay, r, g, b, 1.0F);
+        ropeA.render(ps, buffer, light, overlay, r, g, b, 1.0F);
         ps.popPose();
 
         // rope B: sheave -> counterweight top
@@ -133,7 +133,7 @@ public class ElevatorCarRenderer extends EntityRenderer<ElevatorCarEntity> {
         ps.pushPose();
         ps.translate(-4.0F / 16.0F, (float) sheaveModel / 16.0F, 5.5F / 16.0F);
         ps.scale(1.0F, (float) (lenB / 32.0), 1.0F);
-        ropeB.render(buffer, light, overlay, r, g, b, 1.0F);
+        ropeB.render(ps, buffer, light, overlay, r, g, b, 1.0F);
         ps.popPose();
     }
 

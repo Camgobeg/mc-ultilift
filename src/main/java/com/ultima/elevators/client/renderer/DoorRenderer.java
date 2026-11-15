@@ -50,8 +50,8 @@ public class DoorRenderer implements BlockEntityRenderer<DoorBlockEntity> {
         panelR.x = 4.0F + 8.0F * progress;
         var buffer = buf.getBuffer(RenderType.entityCutoutNoCull(TEX));
         int overlay = OverlayTexture.NO_OVERLAY;
-        panelL.render(buffer, packedLight, overlay, 1.0F, 1.0F, 1.0F, 1.0F);
-        panelR.render(buffer, packedLight, overlay, 1.0F, 1.0F, 1.0F, 1.0F);
+        panelL.render(ps, buffer, packedLight, overlay, 1.0F, 1.0F, 1.0F, 1.0F);
+        panelR.render(ps, buffer, packedLight, overlay, 1.0F, 1.0F, 1.0F, 1.0F);
         ps.popPose();
     }
 

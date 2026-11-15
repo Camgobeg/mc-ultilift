@@ -287,7 +287,13 @@ public class ElevatorCarEntity extends Entity {
 
     // ---------------------------------------------------------------- sounds
 
-    private void play(net.minecraft.sounds.SoundEvent event, float pitch) {
+    private void play(Object sound, float pitch) {
+        net.minecraft.sounds.SoundEvent event;
+        if (sound instanceof net.minecraft.core.Holder<?> h) {
+            event = (net.minecraft.sounds.SoundEvent) h.value();
+        } else {
+            event = (net.minecraft.sounds.SoundEvent) sound;
+        }
         if (level() instanceof ServerLevel sl) {
             sl.playSound(null, getX(), getY(), getZ(), event, SoundSource.BLOCKS, 0.8F, pitch);
         }
@@ -633,7 +639,6 @@ public class ElevatorCarEntity extends Entity {
 
     @Override
     public void addAdditionalSaveData(CompoundTag tag) {
-        super.addAdditionalSaveData(tag);
         if (controllerPos != null) tag.putLong("ctrl", controllerPos.asLong());
         tag.putString("carName", getCarName());
         tag.putFloat("speed", contractSpeed);
@@ -672,7 +677,6 @@ public class ElevatorCarEntity extends Entity {
 
     @Override
     public void readAdditionalSaveData(CompoundTag tag) {
-        super.readAdditionalSaveData(tag);
         if (tag.contains("ctrl")) controllerPos = BlockPos.of(tag.getLong("ctrl"));
         setCarName(tag.contains("carName") ? tag.getString("carName") : "A");
         contractSpeed = Math.max(0.2F, tag.getFloat("speed"));

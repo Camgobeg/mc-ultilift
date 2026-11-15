@@ -355,7 +355,7 @@ public class ControllerBlockEntity extends BlockEntity {
 
     @Nullable
     private Direction firstDoorSide(Level lvl, int x, int z) {
-        for (int fy : floors) {
+        for (int fy : this.floorYs) {
             for (Direction d : Direction.Plane.HORIZONTAL) {
                 BlockPos p = new BlockPos(x, fy, z).relative(d);
                 BlockState st = lvl.getBlockState(p);
